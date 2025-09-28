@@ -1,4 +1,4 @@
-{% set version = '0.0.3' %}
+{% set version = "0.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/errum_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/errum/errum_{{ version }}.tar.gz
-  sha256: 7f49cbcdaf88e1099956a03eb531bf4e71f7e954487277a974e4550badcbd9a1
+  sha256: f3bc30bada57662335c7466fc23d361b91712c438b0e0c21db7f915841c13193
 
 build:
-  number: 4
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -55,8 +55,7 @@ about:
   home: https://github.com/tmsalab/errum
 
   license: GPL-2.0-or-later
-  summary: Perform a Bayesian estimation of the exploratory reduced reparameterized unified model
-    (ErRUM) described by Culpepper and Chen (2018) <doi:10.3102/1076998618791306>.
+  summary: Perform a Bayesian estimation of the exploratory reduced reparameterized unified model (ErRUM) described by Culpepper and Chen (2018) <doi:10.3102/1076998618791306>.
 
   license_family: GPL2
   license_file:
